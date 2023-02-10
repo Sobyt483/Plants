@@ -1,0 +1,61 @@
+.welcome-button {
+    @include font (1.6rem, 400, normal, 2.0rem);
+    border: 2px solid $color-brand;
+    border-radius: 10px;
+    background-color: $color-background;
+    width: 158px;
+    height: 44px;
+}
+.service-button {
+    font-family: 'Inika';
+    @include font (2.0rem, 400, normal, 2.6rem);
+    width: 161px;
+    height: 50px;
+    margin-right: 36px;
+    &:last-child {
+        margin-right: 0;
+    }
+    background-color: $color-background;
+    border: 1px solid $color-brand;
+    border-radius: 5px;
+    color: $color-brand;
+    transition: all 0.6s;
+}
+.price-button {
+    width: 162px;
+    height: 50px;
+    font-family: 'Inika';
+    @include font (2.0rem, 700, normal, 2.6rem);
+    border: 1px solid $color-brand;
+    background-color: white;
+    border-radius: 5px;
+    color: $color-brand;
+}
+.button:hover {
+    cursor: pointer;
+}
+@media (max-width: $content-width-mobile) {
+    .welcome-button {
+        width: 100px;
+        height: 34px;
+        font-size: 1.0rem;
+        line-height: 2.0rem;
+    }
+    .service-button {
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+        width: 121px;
+        height: 35px;
+        margin: 0;
+        &:first-child {
+            margin-right: 10px;
+            margin-bottom: 9px;
+        }
+    }
+    .price-button {
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+        width: 121px;
+        height: 35px;
+    }
+}

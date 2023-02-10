@@ -1,0 +1,112 @@
+.service-section {
+    background-color: $color-background;
+}
+.service-cont {
+    padding: 40px 109px 66px 110px;
+}
+.service-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.service-header {
+    max-width: 306px;
+}
+.service-buttons-container {
+    justify-self: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding-right: 70px;
+    padding-top: 2px;
+}
+.service-picture-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 28%;
+}
+figure {
+    margin: 0 0 53px 0;
+    transition: all 1s;
+}
+.figure-header{
+    @include font(2.0rem, 700, normal, 2.0rem);
+    color: $color-brand;
+    text-align: center;
+    margin: 11px 0;
+}
+.figure-text {
+    @include font(1.6rem, 400, normal, 2.0rem);
+    margin: 0 auto;
+    max-width: 267px;
+}
+.img-description{
+    border: 1px solid $color-service-border;
+    border-radius: 0px 0px 20px 20px;
+    transform: translate(0, -2px);
+    padding-bottom: 36px;
+}
+@media (max-width: $content-width-tablet) {
+    .service-cont {
+        padding: 60px 50px 32px 50px;
+    }
+    .service-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    .service-header {
+        margin-bottom: 40px;
+    }
+    .service-picture-container {
+        padding-left: 1px;
+    }
+    .figure {
+        max-width: 280px;
+        margin: 0 0 34px 0;
+    }
+    .figure-header{
+        margin: 10px 0;
+    }
+    .figure-text {
+        max-width: 203px;
+        text-align: center;
+    }
+    .img-description{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: $content-width-mobile) {
+    .service-cont {
+        padding: 30px 25px 23px 25px;
+    }
+    .service-header {
+        margin-bottom: 36px;
+        max-width: 187px;
+    }
+    .service-buttons-container {
+        padding-right: 0px;
+        >:first-child {
+            >:first-child{
+                margin-right: 7px;
+            }
+        }
+    }
+    .service-picture-container {
+        padding-left: 25px;
+        >* {
+            margin-bottom: 30px;
+        }
+        >:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+}
+@media (max-width: $content-width-small) {
+    .service-picture-container {
+        padding-left: 0px;
+    }
+}

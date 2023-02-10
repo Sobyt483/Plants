@@ -1,0 +1,74 @@
+.welcome-section {
+    background-color: $color-background;
+}
+.welcome-conteiner {
+    padding: 62px 0 61px 0;
+}
+.leaf-img {
+    max-width: 448px;
+    max-height: 407px;
+}
+.welcome-header {
+    max-width: 549px;
+    letter-spacing: 1px;
+    color: $color-text;
+    margin-bottom: 42px;
+}
+.welcome-text {
+    max-width: 525px;
+    @include font(2.0rem, 400, normal, 3.5rem);
+    color: $color-text-about;
+    margin-bottom: 49px;
+}
+@media (max-width: $content-width-tablet) {
+    .welcome-conteiner {
+        padding: 40px 0 70px 0;
+    }
+    .welcome-text-conteiner {
+        order: 1;
+    }
+    .leaf {
+        order: 2;
+    }
+    .leaf-img {
+        max-width: 280px;
+        max-height: 254px;
+    }
+    .welcome-header{
+        max-width: 346px; 
+        letter-spacing: 0.5px;
+        margin: 0 0 31px 0;
+    }
+    .welcome-text {
+        max-width: 341px;
+        @include font(1.6rem, 400, normal, 2.5rem);
+        margin-bottom: 30px;
+        padding-bottom: 5px;
+        padding-left: 4px;
+    }
+    .welcome-button {
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: $content-width-mobile) {
+    .welcome-conteiner {
+        padding: 26px 0 23px 0;
+    }
+    .leaf {
+        display: none;
+    }
+    .welcome-header{
+        max-width: 330px;
+        letter-spacing: 0.5px;
+        margin: 0 0 20px 0;
+    }
+    .welcome-text {
+        max-width: 314px;
+        @include font(1.6rem, 400, normal, 2.5rem);
+        margin-bottom: 27px;
+        padding: 0;
+    }
+    .welcome-button {
+        margin-bottom: 0px;
+    }
+}

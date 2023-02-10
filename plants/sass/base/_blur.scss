@@ -1,0 +1,10 @@
+.figure.blur {
+    filter: blur(2px);
+}
+.figure.blur.active {
+    filter: none;
+}
+.service-button.active {
+    color: white;
+    background-color: $color-brand;
+}

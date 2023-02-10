@@ -1,0 +1,20 @@
+.cont {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 109px;
+}
+@media (max-width: $content-width-tablet) {
+    .cont {
+        padding: 0 50px;
+    }
+}
+@media (max-width: $content-width-mobile) {
+    .cont {
+        padding: 0 25px;
+    }
+}
+@media (max-width: $content-width-small) {
+    .cont {
+        padding: 0 10px 0 0;
+    }
+}

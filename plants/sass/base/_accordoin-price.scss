@@ -1,0 +1,60 @@
+.price-choose-button {
+    position: relative;
+    transition: transform 0.4s;
+}
+.price-choose-button.active {
+    z-index: 3;
+}
+.price-choose-accordion {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 46px;
+    padding-left: 40px;
+}
+.price-choose-accordion.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    background-color: $color-contact-choose;
+    width: 250px;
+    height: 154px;
+    border-radius: 20px;
+}
+.price-choose-text.active {
+    z-index: 3;
+}
+.price-accordion-line {
+    border: 0.5px solid #AEA1A1;
+    width: 164px;
+}
+.price-accordion-text {
+    @include font(1rem, 300, normal, 1rem);
+    color: $color-text;
+    max-width: 164px;
+    margin: 0;
+    margin-top: 6px;
+    letter-spacing: 0.01px;
+}
+.price-accordion-price {
+    @include font(1.2rem, 400, normal, 2rem);
+    margin: 0;
+    margin-top: 6px;
+}
+.price-accordion-button {
+    background: #FFFFFF;
+    border-radius: 10px;
+    @include font(1.4rem, 700, normal, 2rem);
+    color: $color-text;
+    border-style: none;
+    width: 86px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 7px;
+    padding: 0;
+}
+.button-svg.active {
+    background-image: url(assets/img/accordion_btn-active.svg);
+}

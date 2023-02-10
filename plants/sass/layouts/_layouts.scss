@@ -1,0 +1,9 @@
+.column-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.column-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

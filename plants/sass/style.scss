@@ -1,0 +1,21 @@
+@import "abstract/constant";
+@import "abstract/mixin";
+@import "base/base";
+@import "layouts/cont";
+@import "layouts/layouts";
+@import "base/buttons";
+
+//funtions
+@import "base/burger";
+@import "base/accordoin-price";
+@import "base/blur";
+@import "base/contact-us-function";
+
+//components
+@import "components/header";
+@import "components/welcome";
+@import "components/about";
+@import "components/service";
+@import "components/prices";
+@import "components/contact-us";
+@import "components/footer";

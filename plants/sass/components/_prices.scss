@@ -1,0 +1,140 @@
+.prices-left, .prices-rigth {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 118px 0;
+}
+.prices-header {
+    margin: 0;
+    @include font(4.0rem, 700, normal, 4.8rem);
+    letter-spacing: 1px;
+    margin-bottom: 59px;
+}
+.prices-text {
+    margin: 0;
+    @include font(4.0rem, 700, normal, 5rem);
+    text-align: right;
+    max-width: 452px;
+    margin-bottom: 40px;
+}
+.prices-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 39px;
+}
+.prices-picture-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.prices-png {
+    max-width: 152px;
+    max-height: 175px;
+    ;
+}
+.prices-choose-container {
+    width: 332px;
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $color-background;
+    border-radius: 20px;
+    padding: 34px 0;
+}
+.price-choose-item {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-background;
+    padding: 16px 40px;
+    border-radius: 20px;
+    @include font(2.0rem, 700, normal, 2.0rem);
+    letter-spacing: 1px;
+    position: relative;
+}
+.price-choose-button {
+    border: 0;
+    max-height: 16px;
+    border-radius: 50%;
+    padding: 0;
+}
+.price-choose-text {
+    margin: 0;
+}
+.button-svg {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(assets/img/accordion_btn.svg);
+    transition: 0.4s ease-out;
+}
+@media (max-width: $content-width-tablet) {
+    .prices-rigth {
+        padding: 139px 0 87px 0;
+    }
+    .prices-text {
+        @include font(2.5rem, 700, normal, 3.5rem);
+        text-align: right;
+        max-width: 296px;
+        margin-bottom: 29px;
+    }
+    .prices-header {
+        @include font(3.5rem, 700, normal, 4.2rem);
+        letter-spacing: 1px;
+        margin-bottom: 56px;
+        padding-left: 14px;
+    }
+}
+@media (max-width: $content-width-mobile) {
+    .prices-picture-container{
+        display: none;
+    }
+    .prices-left, .prices-rigth {
+        align-items: center;
+        padding: 0px;
+    }
+    .prices-left {
+        margin-bottom: 20px;
+    }
+    .prices-cont {
+        flex-direction: column;
+        padding-top: 25px;
+        padding-bottom: 39px;
+    }
+    .prices-header {
+        @include font(2.5rem, 700, normal, 3.0rem);
+        letter-spacing: 1px;
+        padding: 0;
+        margin-bottom: 37px
+    }
+    .prices-text {
+        @include font(2.0rem, 700, normal, 3.5rem);
+        text-align: center;
+        max-width: 230px;
+        margin-bottom: 21px;
+    }
+    .prices-text-container{
+        margin: 0px;
+        align-items: center;
+    }
+    .prices-choose-container {
+        width: 224px;
+        height: 235px;
+        padding: 28px 0;
+        padding-left: 3px;
+        margin-left: 1px;
+    }
+    .price-choose-item {
+        width: 180px;
+        height: 50px;
+        padding: 16px 30px;
+        @include font(1.5rem, 700, normal, 2.0rem);
+        letter-spacing: 0px;
+    }
+    .price-choose-accordion.active{
+        width: 180px;
+        padding-left: 10px;
+    }
+}

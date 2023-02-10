@@ -1,0 +1,60 @@
+.about-container {
+    padding: 92px 0 93px 0;
+}
+.houseplant-img {
+    max-width: 464px;
+    max-height: 479px;
+}
+.about-header {
+    color: $color-brand;
+    max-width: 463px;
+    margin: 69px 0 40px 0;
+}
+.about-text {
+    max-width: 605px;
+    @include font(2.0rem, 400, normal, 3.0rem);
+    color: $color-text-about;
+}
+@media (max-width: $content-width-tablet) {
+    .about-container {
+        flex-direction: column;
+        padding: 40px 0 92px 0;
+    }
+    .houseplant-img {
+        max-width: 250px;
+        max-height: 258px;
+    }
+    .houseplant-container {
+        margin: 0 auto;
+    }
+    .about-header {
+        max-width: 423px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .about-text {
+        max-width: 668px;
+        margin-bottom: 69px;
+    }
+}
+@media (max-width: $content-width-mobile) {
+    .about-container {
+        flex-direction: column;
+        padding: 30px 0 26px 0;
+    }
+    .houseplant-img {
+        max-width: 150px;
+        max-height: 147px;
+    }
+    .about-header {
+        max-width: 288px;
+        margin-bottom: 12.5px;
+    }
+    .about-text {
+        max-width: 330px;
+        @include font(1.5rem, 400, normal, 2.5rem);
+        margin: 0;
+        margin-bottom: 7px;
+    }
+}

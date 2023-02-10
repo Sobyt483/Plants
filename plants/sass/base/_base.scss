@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Inika';
+    src: url(assets/fonts/Inika-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inika';
+    src: url(assets/fonts/Inika-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; 
+    font-size: 10px;
+    font-family: 'Inter';
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    >main {
+        flex-grow: 1;
+    }
+}
+h1 {
+    @include font(4.5rem, 700, normal, 5.0rem);
+}
+h3 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+.about-header, .service-header {
+    font-family: 'Inika';
+    margin: 0;
+    @include font(4.0rem, 400, normal, 5.2rem)
+}
+@media (max-width: $content-width-tablet) {
+    h1 {
+        @include font(3.5rem, 700, normal, 5.0rem);
+    }
+    .about-header, .service-header {
+        margin: 0;
+        @include font(3.5rem, 400, normal, 4.6rem)
+    }
+}
+@media (max-width: $content-width-mobile){
+    h1 {
+        @include font(2.5rem, 700, normal, 3.5rem);
+    }
+    .about-header, .service-header {
+        margin: 0;
+        @include font(2.5rem, 400, normal, 3.3rem)
+    }
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link:hover {
+    transition: 0.3s all ease-out;
+}
+.green-text {
+    color: $color-brand-add;
+}
+.orange-text {
+    color: $color-brand;
+}
